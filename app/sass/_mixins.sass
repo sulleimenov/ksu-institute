@@ -1,0 +1,63 @@
+@mixin content
+	h1, h2, h3, h4, h5, h6
+		margin: 30px 0 13px
+
+	h2:first-child
+		margin-top: 0
+	h3:first-child
+		margin-top: 0
+	h4:first-child
+		margin-top: 0
+	h5:first-child
+		margin-top: 0
+	h6:first-child
+		margin-top: 0
+
+	p
+		line-height: 1.45rem
+		margin-bottom: 13px
+
+	ul
+		li
+			position: relative
+			list-style-type: none
+		li:before
+			content: ''
+			position: absolute
+			left: -17px
+			top: 8px
+			width: 5px
+			height: 5px
+			border-radius: 50%
+			background-color: $blue
+	
+	ol, ul
+		margin-bottom: 30px
+		padding-left: 22px
+		margin-left: 0
+		li
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+
+@mixin link
+	color: $link
+	border-bottom: 1px solid $link
+	&:hover
+		border-bottom: none
+
+@mixin shadow-bg
+	box-shadow: 0px 24px 62px rgba(22, 28, 45, 0.05)
+
+@mixin shadow
+	box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.05)
+
+@mixin hover
+	transform: translateY(-4px)
+	box-shadow: 0 12px 18px 0 rgba(0,0,0,0.1)
+
+@mixin ease
+	transition: box-shadow 300ms ease, transform 300ms ease
+
+@mixin ease-1
+	transition: 300ms ease

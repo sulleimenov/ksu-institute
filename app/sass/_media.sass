@@ -1,0 +1,266 @@
+@media (min-width: 992px)
+	.lectern-header-menu__hover:hover
+		display: flex
+		justify-content: center
+		&:after
+			content: ''
+			position: absolute
+			bottom: -18px
+			z-index: 5
+			border: 10px solid transparent
+			border-top: 8px solid $accent
+	.lectern-header-menu li:hover
+		.lectern-header-menu-wrapper
+			display: block
+	.lectern-header__logo-mobile
+		display: none
+	.lectern-header-menu--active
+		display: flex
+	.lectern-header-menu--lg
+		display: flex
+	.lectern-header-menu--md
+		display: none!important
+
+@media (max-width: 1366px)
+	html
+		font-size: 15px
+	// h1
+	// 	font-size: 46px
+	// h2
+	// 	font-size: 30px
+	// h3
+	// 	font-size: 26px
+	// h4
+	// 	font-size: 22px
+	// h5
+	// 	font-size: 18px
+	// h6
+	// 	font-size: 15px
+
+@media (max-width: 1199px)
+	.guidance,
+	.lectern-list
+		justify-content: space-between
+	.guidance__item,
+	.lectern-list__item
+		width: 48.4%
+	.lectern-history__text
+		max-width: 650px
+	.lectern-history__img
+		width: 200px
+		height: 240px
+	.container-custom
+		max-width: 100%!important
+	.lectern-header-menu-wrapper
+		height: auto
+@media (max-width: 992px)
+	.guidance__item,
+	.lectern-list__item
+		width: 48%
+	.profession-tab__item
+		flex-wrap: wrap
+	.profession__right,
+	.profession__left
+		width: 100%
+	.profession__tabs
+		justify-content: space-between
+	.profession-tab
+		margin-right: 0
+	.lectern-history__text
+		max-width: 400px
+	.lectern-history__img
+		width: 220px
+		height: 270px
+	.lectern-header-menu
+		position: absolute
+		background-color: #fff
+		transition: all .2s
+		height: auto
+		width: 100%
+		top: 60px
+		left: 0
+		right: 0
+		padding: 25px
+		z-index: 4
+	.lectern-header-menu
+		flex-wrap: wrap
+		align-items: flex-start
+	.lectern-header-menu li a
+		color: $textcolor
+		line-height: 21px
+	.lectern-header-menu li
+		margin-right: 0
+		width: 100%
+		height: auto
+		&:first-child
+			display: none
+	.lectern-header__burger
+		display: block
+		height: 17px
+		width: 72px
+		position: relative
+		span
+			position: absolute
+			background-color: #fff
+			display: block
+			width: 25px
+			height: 1px
+			&:nth-child(1)
+				top: 0
+			&:nth-child(2)
+				top: 8px 
+			&:nth-child(3)
+				bottom: 0
+			&:nth-child(4)
+				left: 35px
+				height: auto
+				width: 0
+				color: #fff
+				top: -1px
+				font-weight: 300
+				font-size: 13px
+	.lectern-header__nav
+		position: absolute
+		display: block
+		background-color: #fff
+		transition: all 0.2s
+		height: 100vh
+		width: 100%
+		top: 60px
+		left: 0
+		right: 0
+		padding: 25px
+		z-index: 4
+		a
+			display: block
+			color: $gray
+			padding: 10px
+			margin-right: 0
+			&:first-child
+				display: none
+	.lectern-header-menu__dropdown li
+		&:first-child
+				display: block
+	.sidebar__content
+		padding-left: 25px
+		padding-right: 25px
+	.sidebar
+		flex-wrap: wrap
+	.sidebar__contacts, .sidebar__nav
+		margin-left: 0
+		width: 100%
+	.sidebar__right
+		width: 100%
+		margin-top: 40px
+	.lectern-header-menu li a
+		padding: 5px 0
+	.link
+		position: relative
+	.lectern-header-menu__link
+		position: absolute
+		top: 14px
+		right: 0
+		width: 8px
+		height: 4px
+		background: url(../../img/institute/icons/arrow-dropdown.svg) right center no-repeat
+	.lectern-header-menu-wrapper
+		position: static
+		height: auto
+		.container
+			padding-left: 0
+			padding-right: 0
+			max-width: none
+		.lectern-header-menu__dropdown li a
+			color: $textcolor
+	.lectern-header-menu li a
+		color: #999999
+	.events__item
+		flex: 0 1 100%
+	.sidebar__right
+		max-width: 100%
+
+@media (max-width: 768px)
+	h1
+		font-size: 30px
+	h2
+		font-size: 26px
+	h3
+		font-size: 22px
+	h4
+		font-size: 18px
+	h5
+		font-size: 16px
+	h6
+		font-size: 15px
+	.lectern-offer
+		height: auto
+		padding-bottom: 60px
+		padding-top: 120px
+	.lectern-header-wrapper
+		border-bottom: 3px solid $yellow
+	.guidance__item,
+	.lectern-list__item
+		width: 100%
+	.profession-tab
+		text-align: center
+	.lectern-offer__title
+		font-size: 18px
+	.lectern-offer__subtitle
+		font-size: 15px
+	.lectern-history__box
+		flex-wrap: wrap
+		flex-direction: column-reverse
+	.lectern-history__img
+		margin: 0 auto
+		margin-bottom: 30px
+	.lectern-history__text
+		max-width: 100%
+	.lectern-footer__img
+		width: 210px
+	.profession__tabs
+		flex-wrap: wrap
+	.profession-tab
+		width: 49%
+		text-align: left
+	.breadcrumbs
+		margin-top: 5px
+		margin-bottom: 5px
+		padding: 7px 0
+		a
+			padding-top: 0
+			padding-bottom: 0
+	.sidebar__right
+		margin-top: 20px
+	.sidebar__content-title
+		font-size: 28px
+	.d-none-768
+		display: none
+	.sidebar__title
+		font-size: 24px
+	.search-form
+		padding-left: 15px
+		padding-right: 15px
+
+@media (max-width: 576px)
+	.lectern-footer__img
+		width: 190px
+	.profession-tab
+		width: 100%
+	.sidebar__content
+		padding: 15px
+	.team__img
+		margin: 0 auto
+		margin-bottom: 20px
+	.team__box-inner
+		flex-wrap: wrap
+	.team__full-information
+		width: 100%
+	.page-content
+		padding-left: 15px
+		padding-right: 15px
+
+@media (max-width: 320px)
+	.lectern-offer__title
+		font-size: 18px
+	.lectern-offer__subtitle
+		font-size: 15px

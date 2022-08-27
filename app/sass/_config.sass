@@ -1,0 +1,150 @@
+$accent: #3D6AFF
+$fontsize: 16px
+$textcolor: #212121
+$bgcolor: #F9FBFD
+$lineheight: 1.45
+$userfont: roboto, sans-serif
+
+// Colors
+$gray: #868686
+$yellow: #FFC147
+$blue: #4AB8FF
+
+$link: #006ec8
+$border: #EEEEEE
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// Import section
+
+// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'
+// @import 'node_modules/bootstrap/scss/_utilities.scss'
+@import 'node_modules/swiper/swiper-bundle'
+
+// Font loaded
+
+@mixin font($fontname, $fontstyle, $fontweight, $fonturl)
+	@font-face
+		font-family: $fontname
+		font-style: $fontstyle
+		font-weight: $fontweight
+		src: url($fonturl) format('ttf')
+
+@include font('Roboto', normal, 400, '../fonts/Roboto-Regular.ttf')
+@include font('Roboto', italic, 400, '../fonts/Roboto-Italic.ttf')
+@include font('Roboto', normal, 700, '../fonts/Roboto-Bold.ttf')
+@include font('Roboto', italic, 700, '../fonts/Roboto-BoldItalic.ttf')
+
+// General css
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	&::before,
+	&::after
+		box-sizing: border-box
+
+img.lazy
+	display: block
+	width: 100%
+	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	background-color: $bgcolor
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	overflow-y: scroll
+
+ul
+	li
+		list-style: none
+
+ol
+	margin-left: 20px
+
+a
+	text-decoration: none
+	color: $textcolor
+
+p
+	margin-bottom: 15px
+	&:last-child
+		margin-bottom: 0
+
+h1, h2, h3, h4, h5, h6
+	margin: 30px 0 15px 0
+	font-weight: 700
+	font-family: $userfont
+	line-height: 1.2
+
+h1
+	font-size: 36px
+	@include media-breakpoint-down(md)
+		font-size: 32px
+	@include media-breakpoint-down(xs)
+		font-size: 26px
+h2
+	font-size: 32px
+	@include media-breakpoint-down(md)
+		font-size: 28px
+	@include media-breakpoint-down(xs)
+		font-size: 24px
+h3
+	font-size: 22px
+	@include media-breakpoint-down(md)
+		font-size: 20px
+	@include media-breakpoint-down(xs)
+		font-size: 18px
+h4
+	font-size: 18px
+h5
+	font-size: 16px
+h6
+	font-size: 14px
+
+img
+	max-width: 100%
+	display: block
+
+button
+	outline: none
+	cursor: pointer
+	font-family: $userfont
+	font-size: 15px
+	border: none
+
+input
+	outline: none
+	border: none
+	border-radius: 3px 0 0 3px
+	font-family: $userfont
+	font-size: 16px
+
+blockquote
+	box-shadow: inset 2px 0 0 0 rgba(#2F74EB, 1)
+	padding-left: 23px
+	font-style: italic

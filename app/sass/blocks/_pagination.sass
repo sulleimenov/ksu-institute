@@ -1,0 +1,52 @@
+.pagination
+	display: flex
+	margin-left: auto
+	margin-right: 0
+	justify-content: flex-end
+	margin-top: 45px
+	a
+		border-bottom: none!important
+	&__list
+		display: flex
+		list-style-type: none
+		padding-left: 0!important
+		li
+			+shadow-bg
+			width: 35px
+			height: 35px
+			line-height: 35px
+			text-align: center
+			border-radius: 5px
+			padding-top: 1px
+			margin: 0 5px
+			background-color: #fff
+			@include ease
+			&.pagination__dot
+				color: $blue
+				font-size: 22px
+				box-shadow: none
+				background-color: #f5f5f5
+				&:hover
+					transform: none
+					box-shadow: none
+			&::before
+				width: 0
+				height: 0
+				display: none
+			&:hover
+				@include hover 
+			&.active
+				background-color: $blue
+				a
+					color: #fff
+			a
+				display: block
+				color: $blue
+	&-button
+		width: 35px
+		height: 35px
+		cursor: pointer
+		&_prev
+			background: url(../../img/icons/visual/prev.svg) center center no-repeat
+		&_next
+			background: url(../../img/icons/visual/next.svg) center center no-repeat

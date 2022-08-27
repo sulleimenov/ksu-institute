@@ -1,0 +1,86 @@
+.team
+	&__flex
+		display: flex
+		justify-content: space-between
+	&__list
+		max-width: 300px
+		width: 100%
+		margin-right: 60px
+	&__list-item
+		margin-bottom: 15px
+		cursor: pointer
+	&__list-item--active
+		position: relative
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			background-color: $accent
+			top: -8px
+			left: -15px
+			width: 110%
+			height: 145%
+			border-radius: 5px
+		.team__list-name
+			color: #fff
+			font-weight: 700
+		.team__list-place
+			color: #fff
+	&__list-name
+		position: relative
+		z-index: 2
+	&__list-place
+		position: relative
+		font-size: 12px
+		z-index: 2
+		color: $gray
+		margin-top: -4px
+	&__box
+		width: 100%
+	&__box-inner
+		display: flex
+		margin-bottom: 30px
+	&__img
+		width: 215px
+		height: 200px
+		border-radius: 7px
+		margin-right: 35px
+		position: relative
+		&::after
+			content: ''
+			border: 1px solid #eee
+			border-radius: 7px
+			bottom: -3px
+			left: -3px
+			position: absolute
+			right: -3px
+			top: -3px
+	&__name
+		font-size: 18px
+		font-weight: 700
+		margin-bottom: 11px
+	&__place
+		position: relative
+		margin-bottom: 26px
+		span
+			font-size: 12px
+			position: absolute
+			left: 0
+			bottom: -14px
+			color: $gray
+	&__place--bold
+		font-weight: 700
+		span
+			font-weight: 400
+	&__email
+		position: relative
+		span
+			font-size: 12px
+			position: absolute
+			left: 0
+			bottom: -14px
+			color: $gray
+	&__title
+		font-size: 18px
+		font-weight: 700
+		margin-bottom: 12px

@@ -1,0 +1,62 @@
+.events
+	&__box
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		gap: 15px
+	&__item
+		display: flex
+		flex: 0 1 49%
+		background-color: #fff
+		border-radius: 10px
+		margin-bottom: 5px
+		+shadow-bg
+		@include ease
+		padding: 16px 30px
+		&:hover
+			background-color: $accent
+			color: #fff
+			.events__date
+				color: #fff
+	&__date
+		display: table-cell
+		text-align: center
+		margin-right: 25px
+		color: $blue
+	&__button
+		display: table
+		margin: 0 auto
+		margin-top: 20px
+		font-size: 15px
+		border-bottom: 1px dashed $textcolor
+		text-align: center
+	
+.page-news-list
+	&__item
+		display: flex
+		align-items: center
+		justify-content: space-between
+		border-bottom: 1px solid $border
+		color: $textcolor
+		margin-bottom: 25px
+		padding-bottom: 25px
+		&:last-child
+			margin-bottom: 0
+			padding-bottom: 0
+	&__title
+		display: block
+		color: $textcolor!important
+		font-size: 18px
+		font-weight: 700
+		margin-bottom: 10px
+		border: none!important
+	&__subtitle
+		margin-bottom: 8px
+		font-size: 15px
+	&__info
+		display: flex
+		font-size: 13px
+		color: $gray
+	&__date
+		margin-right: 8px
+		color: #858585

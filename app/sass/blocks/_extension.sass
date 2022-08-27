@@ -1,0 +1,107 @@
+.back-to
+	display: inline-block
+	cursor: pointer
+	margin-top: 32px
+	margin-left: 32px
+	padding-left: 18px
+	background: url(../../img/institute/icons/back-to.svg) left center no-repeat
+
+.not-link
+	color: $textcolor!important
+	border-bottom: none!important
+	&:hover
+		color: #ffc147!important
+	
+.breadcrumbs
+	min-height: 50px
+	padding: 10px 0
+	a
+		position: relative
+		padding-right: 10px
+		font-size: 13px
+		color: $gray
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+		&::after
+			content: ''
+			display: inline-block
+			margin-left: 8px
+			width: 8px
+			height: 8px
+			background: url('../../img/institute/icons/arrow-breadcrumbs.svg') center no-repeat
+		&:last-child
+			&::after
+				background: none
+	
+td
+	border: 1px solid rgba($gray, 0.4)
+	padding: 5px 10px
+	&.blue
+		background-color: rgba($yellow, 0.1)
+	&>a
+		color: $accent
+
+.sidebar__content a
+	color: $accent
+	border-bottom: 1px solid $accent
+	&:hover
+		border-bottom: none
+
+.load
+	display: block
+	margin: 0 auto
+	padding: 1px 0
+	border-bottom: 1px dashed $textcolor
+
+.text-danger
+	display: block
+	padding: 20px
+	width: 100%
+	background-color: #FFCCCC
+	text-transform: uppercase
+	border-radius: 5px
+	text-align: center
+	border-bottom: none!important
+	color: $textcolor!important
+
+.button
+	display: block
+	font-weight: 700
+	border-radius: 5px
+	background-color: $accent
+	transition: all 0.2s ease
+	&:hover
+		background-color: #2255ff
+	&--more
+		margin-top: 15px
+		a
+			display: block
+			color: #fff
+			padding: 18px 38px
+			width: 100%
+			height: 100%
+
+// Поделиться
+.ya-share2__link
+	border-bottom: none!important
+
+.ya-share2__list
+	padding-left: 0!important
+	&>li::before
+		display: none
+
+.ya-share2__container
+	margin-top: 30px
+
+.content-events-date
+	display: inline-block
+	font-size: 12px
+	font-weight: 400
+	padding: 3px 6px
+	padding-top: 5px
+	background-color: #aaa
+	border-radius: 2px
+	color: #fff
+	margin-bottom: 20px
